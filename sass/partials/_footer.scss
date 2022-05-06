@@ -1,0 +1,37 @@
+footer {
+  background-color: $colour-mintblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  text-align: center;
+
+  ul.footer-item {
+    list-style: none;
+    padding: 0;
+  }
+
+  .footer-item div li{
+    display: inline-block;
+  }
+
+  .footer-logo {
+    display: block;
+    margin: auto;
+    height: 100px;
+  }
+
+  .social-media {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .social-media i {
+    font-size: $medium;
+    margin: 10px;
+  }
+
+}

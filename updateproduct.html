@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+
+    <!--STYLESHEETS-->
+    <link rel="stylesheet" href="https://use.typekit.net/que1ofx.css">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3a7e09602a.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <nav>
+        <a href="index.html"><img class="logo" src="/images/hudlogoest2021.png" alt="The logo for the HUD company"></a>
+        <div class="navigation">
+            <a href="shoppingbasket.html" class="cart-icon-container"><img class="icon" src="/images/basket-icon.png" alt="basket"><p class="in-cart"></p></a>
+            <div class="dropdown">
+                <img class="icon expand-dropdown" src="/images/menu-icon.png" alt="menu">
+                <div class="dropdown-content" id="dropdown">
+                    <a href="products.html">Products</a>
+                    <a href="nocontent.html">Our origin</a>
+                    <a href="nocontent.html">Contact</a>
+                    <div class="social-media">
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        <a href="www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                        <a href="www.twitter.com"><i class="fab fa-twitter"></i></a>
+                    </div>
+                    <hr>
+                    <a href="login.html">Log in</a>
+                    <a href="adminpage.html">Admin page</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="admin-menu"></div>
+
+    <h1>Update product</h1>
+
+    <div class="loading-container">
+        <p>Loading product</p>
+    </div>
+
+    <form class="admin-form" id="update-product">
+
+        <div class="message-container"></div>
+        
+        <div>
+            <label for="title">Title</label>
+            <input id="title" /> 
+        </div>
+
+        <div>
+            <label for="description">Description</label>
+            <textarea id="description"></textarea> 
+        </div>
+
+        <div>
+            <label for="price">Price</label>
+            <input id="price" /> 
+        </div>
+
+        <div>
+            <img class="form-image" alt="product image"/>
+            <label for="image">Upload image</label>
+            <input type="file" id="image" accept="image/png, image/jpeg"/> 
+        </div>
+
+        <div class="featured-checkbox">
+            <input type="checkbox" id="featured" name="featured" value="featured">
+            <label for="featured">Featured product</label>
+        </div>
+
+        <input id="id"/>
+
+        <button class="dark">Update product</button>
+
+        <div class="delete-container"></div>
+
+    </form>
+
+    
+    <div class="copyright">
+        <p>Kiri Kvistnes c copyright 2022</p>
+    </div>
+    <script src="js/updateProduct.js" type="module"></script>
+</body>
+</html>

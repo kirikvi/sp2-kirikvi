@@ -1,0 +1,73 @@
+.all-products-image {
+    background-image: url("../../images/diana-akhmetianova-pBBxMUCgwuU-unsplash.jpg");
+    background-position: 50% 20%;
+    object-fit: contain;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 200px;
+}
+
+.products-container {
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+
+    .product-item {
+        text-decoration: none;
+        position: relative;
+        flex: 1 20%;
+        margin: 10px 10px 40px;
+        transition: 0.3s;
+    }
+
+    .product-item:hover {
+        transform: scale(1.02);
+    }
+
+    .product-item img {
+        display: block;
+        margin: auto;
+        height: 200px;
+        object-fit: contain;
+        max-width: 160px;
+    }
+
+    .product-item p,
+    .product-item h3 {
+        margin: 0;
+    }
+
+    .btn-add-to-cart {
+        width: 100%;
+        font-size: $xx-small;
+        font-weight: 100;
+        margin-top: auto;
+    }
+
+    .btn-add-to-cart:hover {
+        cursor: pointer;
+        background-color: $colour-mintblue;
+        color: $colour-darkpurple;
+    }
+
+    .added {
+        background-color: $colour-mintblue;
+        color: $colour-darkpurple;
+        font-weight: bold;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .products-container {
+        .product-item {
+            flex: 1 40%;
+        }
+
+        .product-item img {
+            max-height: 100px;
+        }
+    }
+}

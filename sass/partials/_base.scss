@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    background-color: $colour-light;
+}
+
+.content-wrapper{
+    max-width: 80%;
+    margin: auto;
+}
+
+.background-image {
+    margin: 0;
+    width: 100%;
+    min-height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo {
+    max-height: 50px;
+  }
+
+  .icon {
+    max-height: 30px;
+  }
+
+.button-styled-link,
+button {
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.dark {
+    background-color: $colour-darkpurple;
+    color: $colour-white;
+    border: none;
+}
+
+.border, 
+#logout {
+    border: 1px solid $colour-darkpurple;
+    background-color: none;
+}
+
+.ml {
+    font-size: $extra-small;
+    margin-bottom: 7px;
+}
+
+.price {
+    font-weight: bolder;
+}
+
+label {
+    display: none;
+}
+
+.active {
+    font-weight: bold;
+}
+
+
+// Message styles
+.message-container {
+    max-width: 80%;
+    margin: auto;
+}
+
+.success {
+    color: green;
+}
+
+.warning {
+    color: orange;
+}
+
+.error {
+    color: red;
+}

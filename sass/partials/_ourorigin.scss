@@ -1,0 +1,17 @@
+.our-origin-box {
+    background-image: url("/images/huha-inc-Hp-3N5Gl1Ak-unsplash.jpg");
+    background-position: 0% 50%;
+    background-blend-mode: overlay;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    border-radius: 2% 50%;
+
+    .our-origin-box h2,
+    .our-origin-box a {
+        margin: 4px;
+    }
+}

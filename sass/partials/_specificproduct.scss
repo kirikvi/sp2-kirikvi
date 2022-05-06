@@ -1,0 +1,39 @@
+.specific-product-container {
+    display: flex;
+    margin-bottom: 50px;
+
+    h1 {
+        font-size: $small-medium;
+        text-align: left;
+    }
+
+    img {
+        object-fit: contain;
+        max-height: 300px;
+        margin: auto;
+    }
+
+    div .button-styled-link {
+        width: 100%;
+        border: none;        
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+    div .button-styled-link:hover {
+        background-color: $colour-mintblue;
+        color: $colour-darkpurple;
+    }
+}
+
+.continue-shopping{
+    display: block;
+    margin: 40px 0 80px;
+}
+
+@media only screen and (max-width: 680px) {
+    .specific-product-container {
+        flex-direction: column;
+    }
+}

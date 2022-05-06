@@ -1,0 +1,94 @@
+nav {
+  background-color: $colour-white;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  .navigation {
+    list-style: none;
+    display: flex;
+  }
+
+  .logo {
+    margin-top: 5px;
+  }
+
+  a.cart-icon-container {
+    position: relative;
+    margin-right: 20px;
+  }
+
+  p.in-cart  {
+    position: absolute;
+    top: 0px;
+    right: 5px;
+    width: 21px;
+    text-align: center;
+    font-size: $xx-small;
+    font-weight: bold;
+    background-color: $colour-darkpurple;
+    color: $colour-white;
+  }
+
+  .navbar {
+    overflow: hidden;
+  }
+
+  .navbar a {
+    float: left;
+    padding: 15px;
+  }
+
+  //DROPDOWN MENU
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+
+  .dropdown .expand-dropdown {
+    cursor: pointer;
+    margin: 0;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0px;
+    top: 60px;
+    min-width: 30%;
+    z-index: 1;
+    background-color: $colour-white;
+    padding: 20px;
+    height: 100%;
+  }
+
+  .dropdown-content a {
+    float: none;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    transition: 0.5s;
+    text-decoration: none;
+  }
+
+  .dropdown-content a:hover {
+    background-color: $colour-mintblue;
+  }  
+
+  .social-media {
+    font-size: $medium;
+    display: flex;
+    justify-content: center;
+  }
+
+  .show-dropdown {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .dropdown-content {
+      width: 100%;
+  }
+}

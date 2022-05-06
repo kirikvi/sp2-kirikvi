@@ -1,0 +1,64 @@
+.campaign-container {
+    background-position: 100% 80%;
+    position: relative;
+    
+    .campaign-text {
+        max-width: 40%;
+        position: absolute;
+        right: 20px;
+        top: 100px;
+    }
+
+    .campaign-text a {
+        text-transform: uppercase;
+        font-weight: 600;
+        padding: 8px 30px;
+        font-size: $small-medium;
+    }
+
+    h1 {
+        font-size: $large;
+    }
+    
+    .campaign-text,
+    .campaign-text h1 {
+        text-align: right;
+    }
+    
+    .price {
+        text-transform: uppercase;
+        font-family: $font-headings;
+    }
+
+    .was {
+        text-decoration: line-through;
+    }
+
+    .now {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    
+    .campaign-container {
+        background-position: left;
+        right: 0px;
+        
+        .campaign-text {
+        position: relative;
+        margin: auto;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.8);
+        min-width: 80%;
+        right: 0px;
+        }
+
+        .campaign-text,
+        .campaign-text h1 {
+        text-align: center;
+    }
+    }
+}
+
+

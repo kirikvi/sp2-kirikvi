@@ -1,0 +1,88 @@
+.product-item.admin-item {
+    background-color: $colour-white;
+    padding: 0 20px 20px;
+    border-radius: 25px;
+}
+
+form.admin-form {
+    margin: auto;
+    max-width: 50%;
+    padding-bottom: 70px;
+
+    label {
+        display: block;
+    }
+
+    input,
+    textarea,
+    button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    button {
+        margin-top: 10px;
+        cursor: pointer;
+    }
+}
+
+.form-image {
+    height: 170px;
+    width: 200px;
+    object-fit: contain;
+    object-position: bottom;
+    display: block;
+    margin: auto;
+}
+
+.delete-button {
+    background-color: $colour-error;
+    color: $colour-white;
+    border: none;
+}
+
+
+#update-product {
+    display: none;
+
+    #id {
+        display: none;
+    }
+}
+
+//ADMIN MENU
+.admin-menu {
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+    align-items: center;
+
+    #loggedin-user {
+        background-color: $colour-mintblue;
+        padding: 5px 20px;
+    }
+    
+    #logout {
+        transition: 0.5s;
+        background-color: $colour-light;
+    }
+
+    #logout:hover {
+        background-color: $colour-darkpurple;
+        color: $colour-white;
+        cursor: pointer;
+        
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .admin-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+
+    form.admin-form {
+        max-width: 80%;
+    }
+}

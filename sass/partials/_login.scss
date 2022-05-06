@@ -1,0 +1,28 @@
+.login-form {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 50px auto;
+
+    input,
+    button {
+        height: 40px;
+        padding: 0 10px;
+        margin: 5px;
+        border-radius: 5px;
+    }
+
+    input {
+        border: 1.5px solid $colour-darkpurple;
+    }
+
+    button {
+        text-transform: uppercase;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .login-form {
+        width: 80%;
+    }
+}

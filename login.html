@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+
+    <!--STYLESHEETS-->
+    <link rel="stylesheet" href="https://use.typekit.net/que1ofx.css">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3a7e09602a.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <nav>
+        <a href="index.html"><img class="logo" src="/images/hudlogoest2021.png" alt="The logo for the HUD company"></a>
+        <div class="navigation">
+            <a href="shoppingbasket.html" class="cart-icon-container"><img class="icon" src="/images/basket-icon.png" alt="basket"><p class="in-cart"></p></a>
+            <div class="dropdown">
+                <img class="icon expand-dropdown" src="/images/menu-icon.png" alt="menu">
+                <div class="dropdown-content" id="dropdown">
+                    <a href="products.html">Products</a>
+                    <a href="nocontent.html">Our origin</a>
+                    <a href="nocontent.html">Contact</a>
+                    <div class="social-media">
+                        <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                        <a href="www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                        <a href="www.twitter.com"><i class="fab fa-twitter"></i></a>
+                    </div>
+                    <hr>
+                    <a href="login.html">Log in</a>
+                    <a href="adminpage.html">Admin page</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <form class="login-form">
+        <h1>Login form</h1>
+        <div class="message-container"></div> 
+        <label for="username">Username</label>
+        <input id="username" type="text" placeholder="username">
+        <label for="password">Password</label>
+        <input id="password" type="password" placeholder="password">
+        <button type="submit" class="dark">Log in</button>
+    </form>
+
+    <script src="js/login.js" type="module"></script>
+</body>
+</html>
