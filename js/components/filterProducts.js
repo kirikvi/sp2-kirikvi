@@ -16,8 +16,8 @@ export function filterProducts(product) {
 
         // display a message if there are no results
         if(filteredProducts.length === 0) {
-            const noResults = "No results";
-            displayMessage("error", noResults, ".message-container");
+            const noResults = `No results for "${filterValue}".`;
+            displayMessage("", noResults, ".message-container");
         } else{
             const noResults = "";
             displayMessage("", noResults, ".message-container");

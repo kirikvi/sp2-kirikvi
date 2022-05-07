@@ -16,6 +16,8 @@ body {
     max-width: 80%;
     margin: auto;
     margin-top: $top-space;
+    // make the footer stick to the bottom
+    min-height: calc(100vh - 70px);
 }
 
 .background-image {
@@ -77,16 +79,19 @@ label {
 .message-container {
     max-width: 80%;
     margin: auto;
+    margin-top: $top-space;
 }
 
 .success {
-    color: green;
+    background-color: $colour-success;
+    color: $colour-white;
 }
 
 .warning {
-    color: orange;
+    background-color: $colour-warning;
 }
 
 .error {
-    color: red;
+    background-color: $colour-error;
+    color: $colour-white;
 }

@@ -1,5 +1,6 @@
 import { baseUrl } from "../../api/api.js";
 import { getToken } from "../../storage/storage.js";
+import { displayMessage } from "../displayMessage.js";
 
 export default function deleteProduct(id) {
     const container = document.querySelector(".delete-container");
@@ -32,6 +33,7 @@ export default function deleteProduct(id) {
                 location.href = "/adminpage.html";
             } catch(error) {
                 console.log(error);
+                displayMessage("error", "Invalid username and/or password", ".message-container");
             }
         }
     };

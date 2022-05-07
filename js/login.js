@@ -58,6 +58,7 @@ async function doLogin(username, password){
         }
     } 
     catch(error) {
-        console.log("catch");
+        console.log(error);
+        displayMessage("error", "Invalid username and/or password", ".message-container");
     }
 } 

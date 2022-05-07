@@ -1,6 +1,5 @@
 import { dropdown } from "./components/dropdown.js";
 import { getCart } from "./storage/cart/cartfunctions.js";
-//import { getCart } from "./storage/cart/cartFunctions.js";
 import { numberOfProducts } from "./storage/cart/numberOfProducts.js";
 dropdown();
 numberOfProducts();
@@ -13,7 +12,7 @@ const products = getCart();
 
 // Display a message if the cart is empty
 if(products.length === 0){
-    cartContainer.innerHTML = "Your cart is empty";
+    cartContainer.innerHTML = `<p class="empty-cart">Your cart is empty</p>`;
 }
 
 products.forEach(inCart => {

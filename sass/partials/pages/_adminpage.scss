@@ -24,6 +24,13 @@ form.admin-form {
         margin-top: 10px;
         cursor: pointer;
     }
+
+    .warning-border {
+        border: 2px solid $colour-warning;
+    }
+    .success-border {
+        border: 2px solid $colour-success;
+    }
 }
 
 .form-image {

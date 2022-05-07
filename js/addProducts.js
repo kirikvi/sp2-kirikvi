@@ -29,14 +29,42 @@ function submitForm(event) {
     event.preventDefault();
 
     message.innerHTML = "";
-    
+
     const titleValue = title.value.trim();
     const priceValue = parseFloat(price.value);
     const descriptionValue = description.value.trim();
 
-    if(titleValue.length === 0 || priceValue.length === 0 || isNaN(priceValue) || descriptionValue.length === 0 || imageSelector.files.length === 0) {
-        displayMessage("warning", "Please supply proper values", ".message-container");
-    } else { 
+    // Form input validations
+      	
+    if(titleValue.length === 0){
+        title.className = "warning-border";
+        displayMessage("warning", "Please fill in the required fields", ".message-container");
+    } else {
+        title.className = "success-border";
+    }
+
+    if(priceValue === 0 || isNaN(priceValue)){
+        price.className = "warning-border";
+        displayMessage("warning", "Please fill in the required fields", ".message-container");
+    } else {
+        price.className = "success-border";
+    }    
+
+    if(descriptionValue.length === 0){
+        description.className = "warning-border";
+        displayMessage("warning", "Please fill in the required fields", ".message-container");
+    } else {
+        description.className = "success-border";
+    }
+    
+    if(imageSelector.files.length === 0){
+        imageSelector.className = "warning-border";
+        displayMessage("warning", "Please fill in the required fields", ".message-container");
+    } else {
+        imageSelector.className = "success-border";
+    }    
+
+    if(!titleValue.length === 0 || !priceValue === 0 || !isNaN(priceValue) || !descriptionValue.length === 0 || !imageSelector.files.length === 0) {
         addProduct();
     }  
 };
@@ -54,7 +82,6 @@ async function addProduct() {
 
     try {
         const response = await fetch(url, options);
-        console.log(response);
         const json = await response.json();
 
         if(json.created_at) {

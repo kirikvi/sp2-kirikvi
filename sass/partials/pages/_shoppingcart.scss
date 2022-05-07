@@ -3,6 +3,12 @@
     flex-direction: column;
     max-width: 90%;
     margin: auto;
+    min-height: 150px;
+
+    .empty-cart {
+        padding-top: $top-space;
+        text-align: center;
+    }
 
     .shopping-basket-item {
         display: flex;

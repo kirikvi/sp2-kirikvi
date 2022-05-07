@@ -13,7 +13,6 @@ const productsUrl = baseUrl + "/products";
 
 async function fetchIndexContent() {
     createHero();
-    console.log(createHero)
     const loading = document.querySelector(".loading-container");
 
     try{

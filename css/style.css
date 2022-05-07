@@ -16,6 +16,7 @@ body {
   max-width: 80%;
   margin: auto;
   margin-top: 50px;
+  min-height: calc(100vh - 70px);
 }
 
 .background-image {
@@ -73,18 +74,21 @@ label {
 .message-container {
   max-width: 80%;
   margin: auto;
+  margin-top: 50px;
 }
 
 .success {
-  color: green;
+  background-color: green;
+  color: #fff;
 }
 
 .warning {
-  color: orange;
+  background-color: orange;
 }
 
 .error {
-  color: red;
+  background-color: red;
+  color: #fff;
 }
 
 nav {
@@ -214,6 +218,7 @@ h3 {
 
 footer {
   background-color: #b4cbd9;
+  flex-shrink: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -473,7 +478,7 @@ footer .social-media i {
   margin: 40px 0 80px;
 }
 
-@media only screen and (max-width: 680px) {
+@media only screen and (max-width: 990px) {
   .specific-product-container {
     flex-direction: column;
   }
@@ -484,6 +489,12 @@ footer .social-media i {
   flex-direction: column;
   max-width: 90%;
   margin: auto;
+  min-height: 150px;
+}
+
+.shopping-basket .empty-cart {
+  padding-top: 50px;
+  text-align: center;
 }
 
 .shopping-basket .shopping-basket-item {
@@ -589,6 +600,14 @@ form.admin-form button {
 form.admin-form button {
   margin-top: 10px;
   cursor: pointer;
+}
+
+form.admin-form .warning-border {
+  border: 2px solid orange;
+}
+
+form.admin-form .success-border {
+  border: 2px solid green;
 }
 
 .form-image {

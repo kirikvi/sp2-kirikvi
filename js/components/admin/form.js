@@ -15,7 +15,6 @@ export function prepareFormData(form){
         } else if (currentElement.type === 'file') {
             const file = currentElement.files[0];
             formData.append(`files.${currentElement.name}`, file, file.name);
-            console.log(file);
         }
     }
 

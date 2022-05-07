@@ -1,4 +1,5 @@
 import { baseUrl } from "../api/api.js";
+import { displayMessage } from "./displayMessage.js";
 
 export async function createHero(){
     const hero = document.querySelector(".campaign-container");
@@ -16,8 +17,8 @@ export async function createHero(){
             <div class="campaign-text">
                 <h1>Campaign!</h1>
                 <p>Get the HÚÐ hydrating kit for 30% off for a limited period</p>
-                <p class="was price">Was 2 639 NOK</p>
-                <p class="now price">Now 1 847 NOK</p>
+                <p class="was price">Was 2 079 NOK</p>
+                <p class="now price">Now 1 599 NOK</p>
                 <a href="/specificproduct.html?id=10" class="button-styled-link dark">Get it now</a>
             </div>`;   
         
@@ -27,6 +28,7 @@ export async function createHero(){
     }
     catch(error) {
         console.log(error);
+        displayMessage("error", "Invalid username and/or password", ".message-container");
     }
     finally {
         console.log("finally");
