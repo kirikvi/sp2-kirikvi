@@ -1,12 +1,12 @@
-export function fetchFeatured(productsToRender) {
+import { baseUrl } from "../api/api.js";
 
-    const apiUrl = "http://localhost:1337";
+export function fetchFeatured(productsToRender) {
     const container = document.querySelector(".products-container");
     container.innerHTML = "";
 
     productsToRender.forEach(function (product) {
 
-        const imageUrl = apiUrl + product.image.url; 
+        const imageUrl = baseUrl + product.image.url; 
 
         //Get only the featured products
         if (product.featured) {

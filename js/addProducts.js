@@ -1,9 +1,9 @@
 import { displayMessage } from "./components/displayMessage.js";
 import { createMenu } from "./components/admin/createMenu.js";
-import { getToken} from "./utils/storage.js";
+import { getToken} from "./storage/storage.js";
 import { baseUrl} from "./api/api.js";
-import { numberOfProducts } from "./utils/numberOfProducts.js";
-import { dropdown } from "./components/navigation.js";
+import { numberOfProducts } from "./storage/cart/numberOfProducts.js";
+import { dropdown } from "./components/dropdown.js";
 import { prepareFormData } from "./components/admin/form.js";
 
 const token = getToken();

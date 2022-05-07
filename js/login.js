@@ -1,8 +1,8 @@
 import { displayMessage } from "./components/displayMessage.js"
-import { saveToken, saveUser } from "./utils/storage.js";
+import { saveToken, saveUser } from "./storage/storage.js";
 import { baseUrl } from "./api/api.js";
-import { numberOfProducts } from "./utils/numberOfProducts.js";
-import { dropdown } from "./components/navigation.js";
+import { numberOfProducts } from "./storage/cart/numberOfProducts.js";
+import { dropdown } from "./components/dropdown.js";
 
 dropdown();
 numberOfProducts();

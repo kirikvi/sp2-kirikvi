@@ -1,4 +1,4 @@
-import { clearStorage } from "../../utils/storage.js";
+import { clearStorage } from "../../storage/storage.js";
 
 export default function logout() {
     const logoutButton = document.querySelector("#logout");

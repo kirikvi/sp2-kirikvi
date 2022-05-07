@@ -1,14 +1,15 @@
-const hero = document.querySelector(".campaign-container");
-const heroUrl = "http://localhost:1337/home";
-const baseUrl = "http://localhost:1337";
+import { baseUrl } from "../api/api.js";
 
-async function createHero(){
+export async function createHero(){
+    const hero = document.querySelector(".campaign-container");
+    const heroUrl = "http://localhost:1337/home";
+
     try {
         const search = await fetch(heroUrl);
         const heroResult = await search.json();
 
         //Get the URL for the hero banner image
-        heroBanner = baseUrl + heroResult.hero_banner.url;
+        const heroBanner = baseUrl + heroResult.hero_banner.url;
     
         // Create the hero banner content
         hero.innerHTML = `
@@ -31,7 +32,7 @@ async function createHero(){
         console.log("finally");
     }
 }
-createHero(); 
+
 
 
 

@@ -1,8 +1,8 @@
 import { displayMessage } from "./components/displayMessage.js";
-import { dropdown } from "./components/navigation.js";
+import { dropdown } from "./components/dropdown.js";
 import { baseUrl } from "./api/api.js";
 import { handleClick } from "./storage/cart/addToCart.js";
-import { numberOfProducts } from "./utils/numberOfProducts.js";
+import { numberOfProducts } from "./storage/cart/numberOfProducts.js";
 
 dropdown();
 numberOfProducts();

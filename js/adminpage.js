@@ -1,9 +1,9 @@
 import { createMenu } from "./components/admin/createMenu.js";
 import { displayMessage } from "./components/displayMessage.js";
-import { dropdown } from "./components/navigation.js";
+import { dropdown } from "./components/dropdown.js";
 import { baseUrl } from "./api/api.js";
-import { numberOfProducts } from "./utils/numberOfProducts.js";
-import { getToken } from "./utils/storage.js";
+import { numberOfProducts } from "./storage/cart/numberOfProducts.js";
+import { getToken } from "./storage/storage.js";
 
 const token = getToken();
 
