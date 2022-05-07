@@ -1,7 +1,7 @@
-import { dropdown } from "./components/navigation.js";
-import { getCart } from "./utils/cartfunctions.js";
-import { numberOfProducts } from "./utils/numberOfProducts.js";
-
+import { dropdown } from "./components/dropdown.js";
+import { getCart } from "./storage/cart/cartfunctions.js";
+//import { getCart } from "./storage/cart/cartFunctions.js";
+import { numberOfProducts } from "./storage/cart/numberOfProducts.js";
 dropdown();
 numberOfProducts();
 

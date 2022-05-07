@@ -1,7 +1,6 @@
-import { baseUrl } from "../settings/api.js";
+import { baseUrl } from "../api/api.js";
 
 export function renderProducts(productsToRender) {
-
     const container = document.querySelector(".products-container");
     container.innerHTML = "";
 

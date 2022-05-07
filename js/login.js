@@ -1,6 +1,6 @@
 import { displayMessage } from "./components/displayMessage.js"
 import { saveToken, saveUser } from "./utils/storage.js";
-import { baseUrl } from "./settings/api.js";
+import { baseUrl } from "./api/api.js";
 import { numberOfProducts } from "./utils/numberOfProducts.js";
 import { dropdown } from "./components/navigation.js";
 

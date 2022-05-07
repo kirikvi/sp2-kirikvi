@@ -1,4 +1,4 @@
-import { baseUrl } from "../../settings/api.js";
+import { baseUrl } from "../../api/api.js";
 import { getToken } from "../../utils/storage.js";
 
 export default function deleteProduct(id) {
