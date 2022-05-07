@@ -24,7 +24,7 @@ async function fetchProduct(){
 
         const imageUrl = baseUrl + productResult.image.url; 
 
-        title.innerHTML = "HUD | " + productResult.title;
+        title.innerHTML = `HÚÐ - ${productResult.title}`;
 
         product.innerHTML = `
             <div class="specific-product-container">

@@ -15,7 +15,7 @@ export async function createHero(){
         hero.innerHTML = `
             <div class="campaign-text">
                 <h1>Campaign!</h1>
-                <p>Get the húð hydrating kit for 30% off for a limited period</p>
+                <p>Get the HÚÐ hydrating kit for 30% off for a limited period</p>
                 <p class="was price">Was 2 639 NOK</p>
                 <p class="now price">Now 1 847 NOK</p>
                 <a href="/specificproduct.html?id=10" class="button-styled-link dark">Get it now</a>

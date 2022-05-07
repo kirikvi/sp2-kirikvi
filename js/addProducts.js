@@ -29,10 +29,10 @@ function submitForm(event) {
     event.preventDefault();
 
     message.innerHTML = "";
+    
     const titleValue = title.value.trim();
     const priceValue = parseFloat(price.value);
     const descriptionValue = description.value.trim();
-
 
     if(titleValue.length === 0 || priceValue.length === 0 || isNaN(priceValue) || descriptionValue.length === 0 || imageSelector.files.length === 0) {
         displayMessage("warning", "Please supply proper values", ".message-container");

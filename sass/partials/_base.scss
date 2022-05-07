@@ -15,6 +15,7 @@ body {
 .content-wrapper{
     max-width: 80%;
     margin: auto;
+    margin-top: $top-space;
 }
 
 .background-image {
@@ -33,11 +34,13 @@ body {
     max-height: 30px;
   }
 
+  // BUTTONS
 .button-styled-link,
 button {
     padding: 8px;
     text-align: center;
     text-decoration: none;
+    border-radius: 2px;
 }
 
 .dark {
@@ -52,11 +55,6 @@ button {
     background-color: none;
 }
 
-.ml {
-    font-size: $extra-small;
-    margin-bottom: 7px;
-}
-
 .price {
     font-weight: bolder;
 }
@@ -67,6 +65,11 @@ label {
 
 .active {
     font-weight: bold;
+}
+
+//COPYRIGHT
+.copyright {
+    text-align: right;
 }
 
 
