@@ -9,7 +9,7 @@ I was to make an online store. I wanted to make a skin care e-store.
 - Sass
 
 ## Getting Started
-1. Clone the repo
+1. Clone this repo
 2. Install dependencies:
 ```
 npm install
@@ -17,9 +17,9 @@ npm install
 
 ## Running
 To run the app, run the following command:
-
+```
 npm run develop
-
+```
 The admin panel will open at `http://localhost:1337/admin`.
 
 If you get a warning about not being able to use port 1337, check that no other Strapi instances are running in another command line or terminal.
