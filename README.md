@@ -1,11 +1,24 @@
-# Strapi Project
+# Semester Project 2
 
-To run the project:
+I was to make an online store. I wanted to make a skin care e-store.
 
+## Description
+
+## Built With
+- Strapi
+- Sass
+
+## Getting Started
+1. Clone the repo
+2. Install dependencies:
 ```
 npm install
-npm run develop
 ```
+
+## Running
+To run the app, run the following command:
+
+npm run develop
 
 The admin panel will open at `http://localhost:1337/admin`.
 
