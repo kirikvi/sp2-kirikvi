@@ -29,3 +29,13 @@ If you get a warning about not being able to use port 1337, check that no other 
 ## Report 
 [Report PDF](https://github.com/kirikvi/sp2-kirikvi/files/11581763/2022-05-08_semester-project-2_kiri-kvistnes_report-DESKTOP-SGUOH60.pdf)
 
+## References 
+Adobe Color, Fonts, Xd, Illustrator and Photoshop
+CodePen Added to cart style 
+Mdn web docs. storage.removeItem()
+Noroff lessons
+Strapi Docs 
+W3Schools. How to make a dropdown menu.
+WebStylePress. Calculate Sum or Total sum from values in array & array object. Watched	23.04.2022. 
+
+
