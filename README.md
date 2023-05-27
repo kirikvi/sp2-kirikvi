@@ -25,3 +25,7 @@ npm run develop
 The admin panel will open at `http://localhost:1337/admin`.
 
 If you get a warning about not being able to use port 1337, check that no other Strapi instances are running in another command line or terminal.
+
+## Report 
+[Report PDF](https://github.com/kirikvi/sp2-kirikvi/files/11581763/2022-05-08_semester-project-2_kiri-kvistnes_report-DESKTOP-SGUOH60.pdf)
+
