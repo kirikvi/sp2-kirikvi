@@ -1,10 +1,10 @@
 # Semester Project 2!
 ![Image](https://github.com/kirikvi/sp2-kirikvi/assets/71313020/ae29eb05-b361-4a33-ad3c-3e36331c1964)
 
-A school project. A skin care online store.
+A school project creating a skin care fictional online store.
 
 ## Description
-I designed and built this e-commerce skin care site. I designed the logo, shot and found images myself and on unsplash.com, and edited the images in Adobe Photoshop to make it look like a authentic skin care line.
+I designed and built this e-commerce skin care site. I designed the logo, shot and found images myself and on unsplash.com, and edited the images in Adobe Photoshop to make it look like a authentic skin care line. I used Strapi API to fetch the content/products to the site. The site also has an admin functionality to create, update or delete products.
 
 ## Built With
 - Strapi
